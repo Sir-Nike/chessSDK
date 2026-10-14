@@ -1,0 +1,32 @@
+[project]
+name = "triad-chess-sdk"
+version = "0.1.0"
+description = "Optional participant helpers and protocol checks for Triad Tactics Chess"
+requires-python = ">=3.11"
+dependencies = ["httpx==0.28.1"]
+[project.optional-dependencies]
+dev = ["chess==1.11.2", "pytest==8.3.5", "jsonschema==4.23.0", "ruff==0.11.11"]
+[project.scripts]
+chess-sdk = "chess_sdk.cli:main"
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.setuptools.package-data]
+chess_sdk = ["schemas/*.json"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
+[tool.ruff]
+line-length = 100
+[tool.ruff.lint]
+select = ["E", "F", "I", "B"]
+ignore = ["E501"]
+
+[dependency-groups]
+check = ["chess==1.11.2"]
+docker = ["uv==0.11.28"]
+
+[tool.uv]
+required-version = "==0.11.28"

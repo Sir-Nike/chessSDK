@@ -1,0 +1,8 @@
+{
+  "protocol": "chess.v1",
+  "model_id": "qwen",
+  "adapter": null,
+  "harness_config": {
+    "ponder": false
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "status": "development_only",
+  "ruleset": "triad-chess-dev-v1",
+  "protocol": "chess.v1",
+  "main_clock_seconds": {
+    "white": 600,
+    "black": 600,
+    "increment": 0
+  },
+  "armageddon_clock_seconds": {
+    "white": 300,
+    "black": 180,
+    "increment": 0
+  },
+  "invalid_limit": 3,
+  "max_plies": null,
+  "message_bytes": 65536,
+  "prompt_tokens": null,
+  "output_tokens": null,
+  "outstanding_inference_per_agent": 1,
+  "global_active_sequences": 4,
+  "active_matches": 2,
+  "startup_seconds": 15,
+  "shutdown_seconds": 3,
+  "container": {
+    "cpus": 1,
+    "memory_mb": 512,
+    "pids": 64,
+    "workspace_mb": 64,
+    "stderr_bytes": 65536,
+    "uid": 65532,
+    "gid": 65532,
+    "network": "none",
+    "root_filesystem": "read-only"
+  },
+  "approved_models": {
+    "horizon": {
+      "name": "K2-Horizon-3.7B (Q4_K_M)",
+      "repository_url": "https://huggingface.co/NANI-Nithin/K2-Horizon-3.7B-GGUF",
+      "filename": "K2-Horizon-3.7B-Q4_K_M.gguf",
+      "repository_revision": "6b8f11e53bd89304a715ba7b6cffb37589d90834",
+      "sha256": "f8dce940ec3e45be3e884a203b0eb3dee4ba57eb23fc63d0e210cdade2ca48ec",
+      "bytes": 3156598464,
+      "download_url": "https://huggingface.co/NANI-Nithin/K2-Horizon-3.7B-GGUF/resolve/6b8f11e53bd89304a715ba7b6cffb37589d90834/K2-Horizon-3.7B-Q4_K_M.gguf"
+    },
+    "qwen": {
+      "name": "Qwen3.8-4B-Distill (Q4_K_M)",
+      "repository_url": "https://huggingface.co/empero-ai/Qwen3.8-4B-Distill-GGUF",
+      "filename": "Qwen3.8-4B-Q4_K_M.gguf",
+      "repository_revision": "391fc7d103e3942a408def3e4f51c2f85d464417",
+      "sha256": "dec96e8cf2e11b613bb46513dec485377f9ca5a351e71712ee0e244f287c6790",
+      "bytes": 2783446304,
+      "download_url": "https://huggingface.co/empero-ai/Qwen3.8-4B-Distill-GGUF/resolve/391fc7d103e3942a408def3e4f51c2f85d464417/Qwen3.8-4B-Q4_K_M.gguf"
+    },
+    "nemotron": {
+      "name": "NVIDIA Nemotron-3-Nano-4B (Q4_K_M)",
+      "repository_url": "https://huggingface.co/lmstudio-community/NVIDIA-Nemotron-3-Nano-4B-GGUF",
+      "filename": "NVIDIA-Nemotron-3-Nano-4B-Q4_K_M.gguf",
+      "repository_revision": "f4732c3cd1c961777138b226030e6c17f6f7db84",
+      "sha256": "083af225449463dd7c38bebc888f9dcad187b834d8b15e08c297dda37c968b50",
+      "bytes": 2837072896,
+      "download_url": "https://huggingface.co/lmstudio-community/NVIDIA-Nemotron-3-Nano-4B-GGUF/resolve/f4732c3cd1c961777138b226030e6c17f6f7db84/NVIDIA-Nemotron-3-Nano-4B-Q4_K_M.gguf"
+    },
+    "gemma": {
+      "name": "Gemma-4-E4B-it (Q4_K_M)",
+      "repository_url": "https://huggingface.co/unsloth/gemma-4-E4B-it-GGUF",
+      "filename": "gemma-4-E4B-it-Q4_K_M.gguf",
+      "repository_revision": "bfc15c382204943c3a8fff0c750b94ae2364d7a3",
+      "sha256": "85a896a047553e842f25297ee5b031d64ff30147d9c4af17b1e4b394cd1fab87",
+      "bytes": 4977171584,
+      "download_url": "https://huggingface.co/unsloth/gemma-4-E4B-it-GGUF/resolve/bfc15c382204943c3a8fff0c750b94ae2364d7a3/gemma-4-E4B-it-Q4_K_M.gguf"
+    }
+  },
+  "adapter_max_bytes": null,
+  "adapter_dtype": null,
+  "adapter_shapes": null,
+  "official_parameters_approved": false,
+  "adapter_rank_min": 1,
+  "adapter_rank_max": 32
+}
